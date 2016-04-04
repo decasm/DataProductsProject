@@ -1,0 +1,57 @@
+---
+title       : Fuel Cost Comparison App
+subtitle    : Pitch
+author      : Devon Smith
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Basic Idea
+
+1. Miles per gallon (mpg) is a poor choice for comparing cars
+2. Gallons per mile (gpm) or Cost per mile (cpm) are better
+3. [GPM Sheds Light On Why Hybrid Cars Are Tough To Justify On Fuel Savings Alone](http://www.dialogueearth.org/2011/08/23/gpm-sheds-light-on-why-hybrid-cars-are-tough-to-justify-on-fuel-savings-alone/)
+4. [Miles-Per-Gallon Is Just Stupid. No, Really, It Is.](http://www.greencarreports.com/news/1019426_miles-per-gallon-is-just-stupid-no-really-it-is)
+
+--- .class #id 
+
+## Plots
+
+The relationship is not linear. As MPG increase to 20, 30, 40, etc,
+the amount of fuel used (GPM) doesn't change nearly as much.
+
+```{r echo=FALSE}
+
+mpg <- 1:50
+gpm <- 1/mpg
+
+# plot of gpm against mpg
+plot(mpg,gpm)
+
+```
+
+---
+
+## And Cost per mile is better
+
+While Gallons per mile is a good, actually showing people what it costs them is even better.
+Allowing people to use their local fuel prices to figure out what they have to pay allows them
+to make better choices. And also allows different fuels to be accounted for - regular, plus, premium grades, and diesel.
+
+---
+
+## My Solution
+
+A simple app that does some simple math that gives better information for better decision making.
+
+[Cost Per Mile Calculator](https://decasm.shinyapps.io/autofuel/)
+
+Future iterations could include geolocating the user and auto-filling in the average fuel cost in the area.
+
+---
+
+

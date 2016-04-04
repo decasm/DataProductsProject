@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fuel Cost Comparison App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Fuel Cost Comparison App">
+  <meta name="author" content="Devon Smith">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Fuel Cost Comparison App</h1>
+    <h2>Pitch</h2>
+    <p>Devon Smith<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Basic Idea</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Miles per gallon (mpg) is a poor choice for comparing cars</li>
+<li>Gallons per mile (gpm) or Cost per mile (cpm) are better</li>
+<li><a href="http://www.dialogueearth.org/2011/08/23/gpm-sheds-light-on-why-hybrid-cars-are-tough-to-justify-on-fuel-savings-alone/">GPM Sheds Light On Why Hybrid Cars Are Tough To Justify On Fuel Savings Alone</a></li>
+<li><a href="http://www.greencarreports.com/news/1019426_miles-per-gallon-is-just-stupid-no-really-it-is">Miles-Per-Gallon Is Just Stupid. No, Really, It Is.</a></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Plots</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The relationship is not linear. As MPG increase to 20, 30, 40, etc,
+the amount of fuel used (GPM) doesn&#39;t change nearly as much.</p>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>And Cost per mile is better</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>While Gallons per mile is a good, actually showing people what it costs them is even better.
+Allowing people to use their local fuel prices to figure out what they have to pay allows them
+to make better choices. And also allows different fuels to be accounted for - regular, plus, premium grades, and diesel.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>My Solution</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A simple app that does some simple math that gives better information for better decision making.</p>
+
+<p><a href="https://decasm.shinyapps.io/autofuel/">Cost Per Mile Calculator</a></p>
+
+<p>Future iterations could include geolocating the user and auto-filling in the average fuel cost in the area.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Basic Idea'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Plots'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='And Cost per mile is better'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='My Solution'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
